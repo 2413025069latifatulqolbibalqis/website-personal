@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Grafika Komputer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('sakura background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(243, 163, 239, 0.9);
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: rgba(245, 169, 226, 0.9);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #f9f9f9;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #eba0e1;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .social-links a.youtube { background-color: #ff0000; }
+
+        .tasks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .task-item {
+            background-color: rgba(254, 246, 255, 0.9);
+            border: 1px solid #eba0e1;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .task-item h3 {
+            color: #eba0e1;
+            margin-bottom: 10px;
+        }
+
+        .task-item img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #483d8b;
+            color: white;
+            padding: 15px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            header img {
+                width: 120px;
+                height: 120px;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Selamat Datang di Portofolio Saya!</h1>
+        <img src="foto profil balqis.jpg" alt="Foto Profil Latifatul Qolbi Balqis">
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#tasks">Tugas</a></li>
+            <li><a href="#social">Sosial Media</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="content">
+        <h2>Tentang Saya</h2>
+        <img src="foto profil balqis.jpg" alt="Foto Profil Latifatul Qolbi Balqis" class="profile-img">
+        <p>Halo! Perkenalkan saya seorang mahasiswa dari jurusan Pendidikan Teknologi Informasi yang memiliki minat pada dunia grafika komputer dan pengembangan web.</p>
+    </section>
+
+    <!-- Tugas -->
+    <section id="tasks" class="content">
+        <h2>Pengumpulan Tugas</h2>
+        <div class="tasks">
+            <div class="task-item">
+                <h3>Tugas 1: Tokoh Perintis Grafika Komputer</h3>
+                <img src="foto tokoh.jpg" alt="Tokoh Perintis Grafika Komputer">
+                <a href="https://drive.google.com/drive/folders/1v6_ffIoB0JUg-Oogrx7fUgOFSCq04Wvw" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #483d8b; color: white; text-decoration: none; border-radius: 5px;">Kunjungi GDrive</a>
+            </div>
+            <div class="task-item">
+                <h3>Tugas 2: Membuat Garis DDA dan Bresenham</h3>
+                <img src="foto garis.jpg" alt="Membuat Garis DDA dan Bresenham">
+                <a href="https://drive.google.com/drive/folders/1vQY7AqJJHuZRIWKJcP_5d6f2oTi6_hRF" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #483d8b; color: white; text-decoration: none; border-radius: 5px;">Kunjungi GDrive</a>
+            </div>
+            <div class="task-item">
+                <h3>Tugas 3: Lingkaran Midpoint dan Bresenham</h3>
+                <img src="foto lingkaran.jpg" alt="Lingkaran Midpoint dan Bresenham">
+                <a href="https://drive.google.com/drive/folders/1vhaZG2rFuQDb6JOkb5i_0Jam_omMm-NG" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #483d8b; color: white; text-decoration: none; border-radius: 5px;">Kunjungi GDrive</a>
+            </div>
+            <div class="task-item">
+                <h3>Tugas 4: Algoritma Pembuatan Kurva</h3>
+                <img src="foto pohon.jpg" alt="Algoritma Pembuatan Kurva">
+                <a href="https://drive.google.com/drive/folders/1vnFLA4hf6YKiZT5AQNR7quBj_rJZFYHi" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #483d8b; color: white; text-decoration: none; border-radius: 5px;">Kunjungi GDrive</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sosial Media -->
+    <section id="social" class="content">
+        <h2>Sosial Media</h2>
+        <div class="social-links">
+            <a href="https://youtube.com/@latifatulqolbibalqis2546?si=tVQW2P9m40dJOlX6" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="content">
+        <h2>Kontak</h2>
+        <p>Email: qolbibalqis01@gmail.com</p>
+        <p>Telepon: 0858-4013-2770</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Latifatul Qolbi Balqis</p>
+    </footer>
+</body>
+</html>
